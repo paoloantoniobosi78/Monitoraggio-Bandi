@@ -7,4 +7,4 @@ check bandi:
 runs-on: ubuntu-latest
 steps:
 - name: controlla bandi
-run: curl -s "URL_DEL_SITO" | grep "parola-chiave"
+run: curl -s "URL_DEL_SITO" | grep "parola-chiave
