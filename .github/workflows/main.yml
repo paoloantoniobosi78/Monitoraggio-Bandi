@@ -1,10 +1,10 @@
 name: Monitoraggio Bandi
-on: 
-schedule: 
-  - cron: '08***'
-jobs : 
-check bandi:
-runs-on: ubuntu-latest
-steps:
-- name: controlla bandi
-run: curl -s "URL_DEL_SITO" | grep "parola-chiave
+on:
+  schedule:
+    - cron: '0 8 * * *'  # Esegui ogni giorno alle 8:00
+jobs:
+  check-bandi:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Controlla bandi
+        run: curl -s "URL_DEL_SITO" | grep "parola-chiave"
