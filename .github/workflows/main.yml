@@ -1,6 +1,7 @@
 name: Monitoraggio Bandi
 on: 
-schedule: - cron: '08***'
+schedule: 
+  - cron: '08***'
 jobs : 
 check bandi:
 runs-on: ubuntu-latest
